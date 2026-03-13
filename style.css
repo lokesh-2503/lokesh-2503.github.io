@@ -1,0 +1,271 @@
+*{
+    font-family:'Playfair Display', serif;
+}
+
+.hover-gradient:hover{
+ background:linear-gradient(90deg, #4facfe, #00f2fe);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+body{
+margin:0;
+font-family: Arial;
+background:#f5f5f5;
+}
+
+/* navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+border-bottom:1px solid black;
+}
+
+.menu a{
+margin-left:30px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+.profile{
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.profile:hover{
+    filter: grayscale(0%);
+}
+
+.project{
+margin-bottom:40px;
+padding-bottom:20px;
+border-bottom:1px solid #ccc;
+}
+
+.project h2{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.project p{
+margin-bottom:10px;
+}
+
+.project-btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+background:black;
+color:white;
+text-decoration:none;
+}
+
+.section-image{
+width:100%;
+max-width:400px;
+margin-top:40px;
+filter: grayscale(100%);
+}
+
+.section-image{
+filter: grayscale(100%);
+transition: 0.4s;
+}
+
+.section-image:hover{
+filter: grayscale(0%);
+}
+
+/* grid layout */
+
+.grid-container{
+display:grid;
+grid-template-columns: 1fr 2fr;
+height:90vh;
+}
+
+
+/* left side */
+
+.left{
+padding:60px;
+border-right:1px solid black;
+}
+
+.big-name{
+font-size:80px;
+line-height:0.9;
+margin-bottom:40px;
+}
+
+.profile{
+width:100%;
+max-width:400px;
+}
+
+
+/* right side */
+
+.right{
+padding:60px;
+font-size:18px;
+line-height:1.7;
+}
+
+.right ul{
+list-style:none;
+padding:0;
+}
+
+.right li{
+margin-bottom:15px;
+font-size:20px;
+}
+
+/* Contact title */
+
+.contact-title{
+font-size:80px;
+margin:60px;
+}
+
+
+/* Contact grid */
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+border:1px solid black;
+margin: 7.5%;
+}
+
+
+/* Contact boxes */
+
+.contact-title{
+font-family:'Playfair Display', serif;
+font-size:80px;
+margin:60px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+border-top:1px solid black;
+border-bottom:1px solid black;
+}
+
+.contact-box{
+height:300px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+border-right:1px solid black;
+text-decoration:none;
+color:black;
+}
+
+.contact-box:last-child{
+border-right:none;
+}
+
+.contact-box h2{
+font-family:'Playfair Display', serif;
+font-size:42px;
+margin-bottom:10px;
+}
+
+.contact-box:hover{
+    background-color: black;
+    color: #f5f5f5;
+}
+
+.contact-box:hover h2,
+.contact-box:hover p{
+    color: #f5f5f5;
+}
+
+
+.skill{
+margin-bottom:40px;
+}
+
+.skill-icon{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.skill h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.skill p{
+line-height:1.8;
+color:#444;
+}
+
+.cert{
+margin-bottom:40px;
+}
+
+.cert-icon{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.cert h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.cert p{
+line-height:1.8;
+color:#444;
+}
+
+.cert a{
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.menu a{
+position: relative;
+text-decoration: none;
+color: black;
+padding-bottom: 5px;
+}
+
+/* underline element */
+.menu a::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0%;
+height: 2px;
+background: linear-gradient(90deg,#ff7e5f,#feb47b);
+transition: width 0.3s ease;
+}
+
+/* hover animation */
+.menu a:hover::after{
+width: 100%;
+}
+
+.menu a::after{
+content: "";
+position: absolute;
+left: 0;
+bottom: -3px;
+width: 0;
+height: 2px;
+background: linear-gradient(90deg,#667eea,#764ba2);
+transition: width 0.35s ease;
+}
